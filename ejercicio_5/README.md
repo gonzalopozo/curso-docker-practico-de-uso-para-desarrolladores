@@ -34,3 +34,8 @@ docker compose -f docker-compose.prod.yml build
 ```
 docker buildx build --platform linux/amd64,linux/arm64 -t gonzalopozo/teslo-shop-backend --push .
 ```
+
+
+```
+docker buildx build --platform linux/amd64,linux/arm64 -t registry.digitalocean.com/gonzalopozo-registry/teslo-shop-backend:1.2.0 --push .
+```
