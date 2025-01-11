@@ -29,3 +29,8 @@ Ejecutar este comando
 ```
 docker compose -f docker-compose.prod.yml build
 ```
+
+
+```
+docker buildx build --platform linux/amd64,linux/arm64 -t gonzalopozo/teslo-shop-backend --push .
+```
